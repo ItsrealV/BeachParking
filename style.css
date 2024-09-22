@@ -1,0 +1,144 @@
+
+
+/* Set a maximum width for the images and make them responsive */
+.feature img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Add some padding/margin to the columns to create space */
+  .feature {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the icons above the headings */
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FFBF00 !important; /* Optional: Primary color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /* Style for column headings */
+.feature h3 {
+    font-size: 1.5em; /* Increase font size for emphasis */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Dark color for better contrast */
+    margin: 10px 0; /* Add some spacing above and below */
+
+}
+
+
+
+/* Optional: Style for the main heading */
+#featured-3 h2 {
+    color: #333; /* Change to your desired color */
+}
+
+  
+  /* Custom media queries for different screen sizes */
+@media (max-width: 576px) {
+    /* Stack columns vertically on small screens */
+    .row-cols-lg-3 .feature {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Ensure all 4 columns appear side-by-side on larger screens */
+    .row-cols-lg-4 .col {
+        flex: 1 0 25%; /* Make sure each column takes up 25% width */
+    }
+}
+
+
+/* Container for the columns */
+.features-container {
+    display: flex;
+    justify-content: center; /* Center the columns within the container */
+    flex-wrap: wrap; /* Ensure they wrap on smaller screens */
+    margin: 0 auto; /* Center the container itself */
+    padding: 0 15px; /* Add padding to the container to avoid touching edges */
+}
+
+/* Featured columns styling */
+#featured-3 {
+    display: flex;
+    flex-wrap: wrap; /* Ensure columns wrap on smaller screens */
+    justify-content: center; /* Center the columns within the container */
+}
+
+/* Individual feature columns */
+#featured-3 .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(252, 222, 112, 0.75); /* 75% opacity */ /* 25% opacity */ /* Light green background */
+    margin: 16px; /* Space between columns */
+    box-shadow: 0 0 0 0 #000;
+    border-radius: 20px;
+    width: 100%; /* Full width, will be adjusted by parent container */
+    max-width: 250px; /* Maximum width for each column */
+    padding: 55px 10px 40px;
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+  
+ /* Container for the carousel */
+.carousel-container {
+    max-width: 800px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the carousel */
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 30px; /* Add some padding around the carousel */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Style for carousel images */
+.carousel-inner img {
+    width: 100%; /* Make images responsive to container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the container without distortion */
+}
+
+/* Optional: Adjust carousel controls size */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+}
+
+/* Optional: Add some spacing for carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust as needed to position controls */
+}
+
+/* Custom styles for Sign In and Sign Up buttons */
+.btn-outline-primary {
+    color: #FFC107; /* Yellow text color */
+    border-color: #FFC107; /* Yellow border color */
+}
+
+.btn-outline-primary:hover {
+    background-color: #FFC107; /* Yellow background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+.btn-primary {
+    background-color: #FFC107; /* Yellow background color */
+    border-color: #FFC107; /* Yellow border color */
+    color: #fff; /* White text color */
+}
+
+.btn-primary:hover {
+    background-color: #e0a800; /* Darker yellow for hover effect */
+    border-color: #e0a800; /* Darker yellow border color */
+}
